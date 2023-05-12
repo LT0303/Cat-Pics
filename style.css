@@ -20,6 +20,7 @@ button {
     background-color: #FEA1A1;
     transition: 0.22s background-color;
     color: #472020;
+    border-color: #472020;
     border-radius: 75%;
     padding: 0.75em;
 }
