@@ -2,9 +2,15 @@ const catPics = document.querySelector('#getPic');
 
 getPic.addEventListener('submit', async function (e) {
         e.preventDefault();
-        const config = { header: { 'x-api-key': 'live_A8b2HZBkcv6PsexlEtpA5yDhBpUGjPuTQjqWfmJSu8mKUPyfp0IeawfRHMOOvlNN' } };
-        const res = await axios.get(`https://api.thecatapi.com/v1/images/search`, config);
-        makePic(res);
+        try {
+            const config = { header: { 'x-api-key': 'live_A8b2HZBkcv6PsexlEtpA5yDhBpUGjPuTQjqWfmJSu8mKUPyfp0IeawfRHMOOvlNN' } };
+            const res = await axios.get(`https://api.thecatapi.com/v1/images/search`, config);
+            makePic(res);
+        } catch (e) {
+            const errorMsg = document.createElement('p');
+            errorMsg.innerText = 'Sorry, an error occured. Please try again. :('
+            document.body.children[2].append(errorMsg);
+        }
 })
 
 const makePic = (pic) => {
