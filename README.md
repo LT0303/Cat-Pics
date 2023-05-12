@@ -1,4 +1,4 @@
-# Cat Pics and GIFs
+# Cat Pics
 
 This is a small project meant to serve as practice using API calls and functions, async JS functions,
 promises, and other JS methods and tools like selectors, event listeners, and creating elements. I also
