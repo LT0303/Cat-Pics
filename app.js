@@ -5,11 +5,16 @@ getPic.addEventListener('submit', async function (e) {
         const config = { header: { 'x-api-key': 'live_A8b2HZBkcv6PsexlEtpA5yDhBpUGjPuTQjqWfmJSu8mKUPyfp0IeawfRHMOOvlNN' } };
         const res = await axios.get(`https://api.thecatapi.com/v1/images/search`, config);
         makePic(res);
-
 })
 
 const makePic = (pic) => {
     const img = document.createElement('img');
+    if (document.body.children[2].children[0]) {
+        const deletePic = () => {
+            document.body.children[2].children[0].remove();
+        }
+        deletePic();
+    }
     img.src = pic.data[0].url;
     document.body.children[2].append(img);
 }
