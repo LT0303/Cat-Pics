@@ -10,11 +10,12 @@ getPic.addEventListener('submit', async function (e) {
 const makePic = (pic) => {
     const img = document.createElement('img');
     if (document.body.children[2].children[0]) {
-        const deletePic = () => {
-            document.body.children[2].children[0].remove();
-        }
-        deletePic();
+        deletePic(); 
     }
     img.src = pic.data[0].url;
     document.body.children[2].append(img);
+}
+
+const deletePic = () => {
+    document.body.children[2].children[0].remove();
 }
