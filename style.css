@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#catPic, img {
+    display: flex;
+    align-self: center;
+    flex: 0 0 auto;
+    max-width: 75vw;
+    max-height: 75vh;
+    margin: 1em;
+}
