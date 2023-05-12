@@ -1,15 +1,40 @@
 body {
+    font-family: 'Concert One', cursive;
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
     width: 100vw;
     margin: 0;
+    background-color: #F9FBE7;
+}
+
+h1 {
+    color: #472020;
+    font-size: 3em;
+}
+
+button {
+    font-family: 'Concert One', cursive;
+    font-size: 1.25em;
+    background-color: #FEA1A1;
+    transition: 0.22s background-color;
+    color: #472020;
+    border-radius: 75%;
+    padding: 0.75em;
+}
+
+button:hover {
+    background-color: #e08989;
 }
 
 #catPic {
     display: flex;
     justify-content: center;
+    background-color: #F0EDD4;
+    border: #FEA1A1 dotted;
+    padding: 1em;
+    margin: 1em;
 }
 
 #catPic, img {
@@ -18,5 +43,4 @@ body {
     flex: 0 0 auto;
     max-width: 75vw;
     max-height: 75vh;
-    margin: 1em;
 }
