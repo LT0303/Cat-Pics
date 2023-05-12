@@ -13,7 +13,7 @@ getPic.addEventListener('submit', async function (e) {
         }
 })
 
-const makePic = (pic) => {
+const makePic = pic => {
     const img = document.createElement('img');
     if (document.body.children[2].children[0]) {
         deletePic(); 
