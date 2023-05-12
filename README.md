@@ -5,4 +5,4 @@ promises, and other JS methods and tools like selectors, event listeners, and cr
 want to continue using and practicing Axios, Flexbox, and other CSS. The site will allow users to display
 cat pictures and GIFs with simple buttons and input forms for different kinds of pictures and GIFs separately.
 I also learned to use VS Code's built-in Publish to Github functionality to make a repository for this
-project.
+project. The site uses the CATAAS API (https://cataas.com/)
